@@ -22,14 +22,42 @@ Tanto el codigo de el procesamiento de datos y la creación de los modelos predi
 - scikit-learn
 - XGBoost
 - Keras 
+- Tensorflow
 - ?
 
 Y para el acceso remoto a este proyecto, utilizamos este repositorio en GitHub
 
 ## Proceso de desarrollo
 
+# Procesamiento del dataset orginial
+
 Empezamos con el procesamiento de un dataset con datos de personas que padecen Alzheimer y otras que no, obtenido de [Fuente del dataset](https://www.kaggle.com/datasets/ankushpanday1/alzheimers-prediction-dataset-global).
 
 Para empezar el dataset original cuenta con los siguientes tipos de columnas
 
-![Proceso](assets/columntype.png)
+![Proceso](assets/precolumns.png)
+
+Originalmente solo se cuenta con 4 columnas numéricas de 25 columnas, las columnas no numéricas fueron convertidas a categorícas numéricas, además se hace una normlalización de los datos.
+
+![Proceso](assets/postcolumns.png)
+
+Luego del procesamiento de los datos, se tienen solo columnas numéricas, con un total de 27 columnas.
+
+Entonces en este momento se realiza un analísis exploratorio de los datos, donde veremos la correlación entre columnas, por lo que se puede ver en el mapa de correlación, hay realmente pocas categorias que se relacionen con otras, siendo "Age" y "Alzheimer's diagnosis" la mayor correlación en todo el dataset, lo que no es una buena ni novedosa noticia.
+
+
+# Resultado de los modelos
+
+![Proceso](assets/supervisados.png)
+
+Los modelos supervisados entrenados fueron:
+- RandomForestCLassifier (scikit-learn) (n_estimators=1200, max_depth=40, min_samples_split=2, random_state=42)
+- LogisticRegresion (scikit-learn) (max_iter=2500, C=4.0, solver="liblinear", random_state=42)
+- XGBClassifier (XGBoost) (n_estimators=600, learning_rate=0.05, max_depth=15, subsample=0.9, colsample_bytree=0.9, eval_metric="logloss", random_state=42)
+
+
+![Proceso](assets/supervisadosno.png)
+
+Los modelos no supervisados entrenados fueron:
+- Kmeans (scikit-learn)(n_clusters=2, algorithm='lloyd', init='random', max_iter=100, n_init=10, random_state=1)
+- kmeans(con MinMaxScaler) (n_clusters=2, algorithm='lloyd', init='random', max_iter=100, n_init=10, random_state=1)
