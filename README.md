@@ -61,3 +61,28 @@ Los modelos supervisados entrenados fueron:
 Los modelos no supervisados entrenados fueron:
 - Kmeans (scikit-learn)(n_clusters=2, algorithm='lloyd', init='random', max_iter=100, n_init=10, random_state=1)
 - kmeans(con MinMaxScaler) (n_clusters=2, algorithm='lloyd', init='random', max_iter=100, n_init=10, random_state=1)
+
+
+## Funcionalidad extra
+
+Junto al proyecto de entrenamiento de modelos, se creó un chatbot, este está basado en el LLM [DeepSeek R1 Zero](https://openrouter.ai/deepseek/deepseek-r1-zero:free) y montado en la plataforma Huggingface [Prueba Aquí!!!](https://huggingface.co/[placeholder]), el objetivo de este sub-proyecto es aplicar los modelos entrenados y hacerlos accesibles por cualquier persona sin necesidad de tener conocimientos sobre un Jupyter Notebook.
+
+
+## Estado del proyecto
+
+En desarrollo. El proyecto se encuentra en su fase final, realizando pequeños retoques y cerca de su culminación.
+
+
+## Agradecimientos
+
+Realmente, no hay cantidad de texto capaz de justificar lo agradecidos que como grupo de proyecto tenemos para con el Samsung Innovation Campus (SIC), valoramos mucho el haber tenido la oportunidad de participar en un proyecto de esta calidad. Por lo que estamos:
+
+Agradecidos para con los docentes y tutores por sus amplios conocimientos, que semana tras semana se esforzaron no tan solo por impartir sino que por hacer entender lo que explicaban, cada pequeña pregunta era resueltan y siempre húbo el interes en la retroctividad. 
+
+Agradecidos para con el equipo coordinador del Samsung Innovation Campus, por su profesionalidad pero a la vez por su amabilidad al acercarse a los alumnos en aquellos momentos necesarios, sin dejar de mencionar que como alumnos, fué evidente el interes por parte del SIC en el desarrallo personal y profesional, demostrado en aquellas Masterclass especiales con grandes profesionales de diferentes áreas, que contribuyeron en otros temas diferentes al grueso principal del SIC.
+
+Agradecidos para con aquellas instituciones universitarias que formaron alianzas con el SIC y permitieron a decenas de jovenes entrar a formarse en este increible programa.
+
+Y por ultimo, agradecidos para con todos los familiares, amigos y compañeros de estudio, que nos apoyaron personalmente durante el transcurso del SIC y que sin ellos no hubiesemos tenido las fuerzas suficientes para llegar a la culminación de este programa.
+
+Muchas gracias a todos!!! :D
