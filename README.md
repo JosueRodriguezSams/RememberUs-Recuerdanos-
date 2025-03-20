@@ -1,6 +1,6 @@
 # RememberUs
 
-El Alzheimer es un tipo de enfermedad mental neurodegenerativa que como primer paso afecta la memoria y el pensamiento lógico. El objetivo principal de este proyecto es entrenar diferentes modelos de IA para predecir el desarrollo de Alzheimer en una persona. Ademas combinamos los modelos predictivos con un chatbot basdo en el el LLM [DeepSeek R1 Zero](https://openrouter.ai/deepseek/deepseek-r1-zero:free) para que cualquier persona pueda probar de primera mano el funcionamineto de los modelos de prediccion. [Prueba Aquí!!!](https://huggingface.co/[placeholder])
+El Alzheimer es un tipo de enfermedad mental neurodegenerativa que como primer paso afecta la memoria y el pensamiento lógico. El objetivo principal de este proyecto es entrenar diferentes modelos de IA para predecir el desarrollo de Alzheimer en una persona. Ademas combinamos los modelos predictivos con un chatbot basdo en el el LLM [DeepSeek R1 Zero](https://openrouter.ai/deepseek/deepseek-r1-zero:free) para que cualquier persona pueda probar de primera mano el funcionamineto de los modelos de prediccion. 
 
 ## Tabla de contenidos
 
@@ -21,9 +21,12 @@ Tanto el codigo de el procesamiento de datos y la creación de los modelos predi
 - Seaborn
 - scikit-learn
 - XGBoost
+- nltk
 - Keras 
 - Tensorflow
-- ?
+- openai
+- Gradio
+- Y otras...
 
 Y para el acceso remoto a este proyecto, utilizamos este repositorio en GitHub
 
@@ -65,12 +68,12 @@ Los modelos no supervisados entrenados fueron:
 
 ## Funcionalidad extra
 
-Junto al proyecto de entrenamiento de modelos, se creó un chatbot, este está basado en el LLM [DeepSeek R1 Zero](https://openrouter.ai/deepseek/deepseek-r1-zero:free) y montado en la plataforma Huggingface [Prueba Aquí!!!](https://huggingface.co/[placeholder]), el objetivo de este sub-proyecto es aplicar los modelos entrenados y hacerlos accesibles por cualquier persona sin necesidad de tener conocimientos sobre un Jupyter Notebook.
+Junto al proyecto de entrenamiento de modelos, se creó un chatbot, este está basado en el LLM [DeepSeek R1 Zero](https://openrouter.ai/deepseek/deepseek-r1-zero:free), el objetivo de este sub-proyecto es aplicar los modelos entrenados y hacerlos accesibles por cualquier persona.
 
 
 ## Estado del proyecto
 
-En desarrollo. El proyecto se encuentra en su fase final, realizando pequeños retoques y cerca de su culminación.
+Finalizado.
 
 
 ## Agradecimientos
